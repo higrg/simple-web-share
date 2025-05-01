@@ -4,7 +4,19 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useAuth } from "../contexts/AuthContext";
-import { Home, Register, AccountCircle, Info, Mail, Categories, ShoppingBag, Heart, ShoppingCart, LogIn, LogOut } from "lucide-react";
+import { 
+  Home, 
+  UserPlus, 
+  User, 
+  Info, 
+  Mail, 
+  LayoutGrid, 
+  ShoppingBag, 
+  Heart, 
+  ShoppingCart, 
+  LogIn, 
+  LogOut 
+} from "lucide-react";
 
 const Navbar = () => {
   const { user, login, logout } = useAuth();
@@ -68,11 +80,11 @@ const Navbar = () => {
               <span>Home</span>
             </Link>
             <Link to="/register" className="flex items-center gap-1 text-gray-800 hover:text-[#ff385c]">
-              <Register className="h-4 w-4" />
+              <UserPlus className="h-4 w-4" />
               <span>Register</span>
             </Link>
             <Link to="/account" className="flex items-center gap-1 text-gray-800 hover:text-[#ff385c]">
-              <AccountCircle className="h-4 w-4" />
+              <User className="h-4 w-4" />
               <span>Account</span>
             </Link>
             <Link to="/about" className="flex items-center gap-1 text-gray-800 hover:text-[#ff385c]">
@@ -84,7 +96,7 @@ const Navbar = () => {
               <span>Contact</span>
             </Link>
             <Link to="/categories" className="flex items-center gap-1 text-gray-800 hover:text-[#ff385c]">
-              <Categories className="h-4 w-4" />
+              <LayoutGrid className="h-4 w-4" />
               <span>Categories</span>
             </Link>
             <Link to="/products" className="flex items-center gap-1 text-gray-800 hover:text-[#ff385c]">

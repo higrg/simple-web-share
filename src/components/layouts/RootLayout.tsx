@@ -1,6 +1,7 @@
 
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar";
+import { Toaster } from "../ui/toaster";
 
 const RootLayout = () => {
   return (
@@ -9,6 +10,7 @@ const RootLayout = () => {
       <main className="flex-1 container mx-auto px-4 py-8">
         <Outlet />
       </main>
+      <Toaster />
     </div>
   );
 };
