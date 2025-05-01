@@ -1,4 +1,6 @@
 
+export type Category = "Action" | "Adventure" | "RPG" | "Strategy";
+
 export interface User {
   id?: number;
   firstname: string;
