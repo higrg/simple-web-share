@@ -16,7 +16,7 @@ export const products: Product[] = [
     category: 'Action', 
     price: 49.99, 
     description: 'Fast-paced action game.', 
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085' 
+    image: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f' 
   },
   { 
     id: 3, 
@@ -24,7 +24,7 @@ export const products: Product[] = [
     category: 'Adventure', 
     price: 39.99, 
     description: 'Explore magical worlds.', 
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f' 
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f' 
   },
   { 
     id: 4, 
@@ -32,7 +32,7 @@ export const products: Product[] = [
     category: 'Strategy', 
     price: 44.99, 
     description: 'Master strategic warfare.', 
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475' 
+    image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420' 
   },
   { 
     id: 5, 
@@ -40,7 +40,7 @@ export const products: Product[] = [
     category: 'Action', 
     price: 54.99, 
     description: 'Futuristic cyberpunk action game.', 
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b' 
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6' 
   },
   { 
     id: 6, 
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: 'RPG', 
     price: 59.99, 
     description: 'Slay dragons in this epic RPG.', 
-    image: 'https://images.unsplash.com/photo-1605806616949-1e87b487fc2f' 
+    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e' 
   },
   { 
     id: 7, 
@@ -56,7 +56,7 @@ export const products: Product[] = [
     category: 'Adventure', 
     price: 45.99, 
     description: 'Discover distant galaxies.', 
-    image: 'https://images.unsplash.com/photo-1581822261290-991b38693d1b' 
+    image: 'https://images.unsplash.com/photo-1518365050014-70fe7232897f' 
   },
   { 
     id: 8, 
@@ -64,7 +64,7 @@ export const products: Product[] = [
     category: 'Strategy', 
     price: 39.99, 
     description: 'Build and manage your own city.', 
-    image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df' 
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31' 
   },
   { 
     id: 9, 
@@ -72,7 +72,7 @@ export const products: Product[] = [
     category: 'Action', 
     price: 49.99, 
     description: 'Become a master ninja.', 
-    image: 'https://images.unsplash.com/photo-1531259683007-016a7b628fc3' 
+    image: 'https://images.unsplash.com/photo-1535223289827-42f1e9919769' 
   },
   { 
     id: 10, 
@@ -88,7 +88,7 @@ export const products: Product[] = [
     category: 'RPG', 
     price: 55.99, 
     description: 'Learn spells at a magical school.', 
-    image: 'https://images.unsplash.com/photo-1487035242901-d419a42d17af' 
+    image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7' 
   },
   { 
     id: 12, 
@@ -96,7 +96,7 @@ export const products: Product[] = [
     category: 'Strategy', 
     price: 47.99, 
     description: 'Command armies in epic battles.', 
-    image: 'https://images.unsplash.com/photo-1533581166251-c80b0cfe8447' 
+    image: 'https://images.unsplash.com/photo-1522069213448-443a614da9b6' 
   },
   { 
     id: 13, 
@@ -104,7 +104,7 @@ export const products: Product[] = [
     category: 'Action', 
     price: 48.99, 
     description: 'High-speed street racing game.', 
-    image: 'https://images.unsplash.com/photo-1603932743566-3d56bdded397' 
+    image: 'https://images.unsplash.com/photo-1591464552406-cd4f2c59d3fb' 
   },
   { 
     id: 14, 
@@ -112,6 +112,6 @@ export const products: Product[] = [
     category: 'Adventure', 
     price: 41.99, 
     description: 'Solve puzzles and find hidden treasures.', 
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f' 
+    image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b' 
   }
 ];
