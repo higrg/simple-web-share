@@ -9,9 +9,9 @@ const ContactPage = () => {
       </CardHeader>
       <CardContent>
         <p>
-          Reach out to our team leader:{" "}
-          <a href="mailto:leader@gameshop.com" className="text-[#ff385c] hover:underline">
-            leader@gameshop.com
+          Reach out to our team:{" "}
+          <a href="mailto:gannatgamal995@gmail.com" className="text-[#ff385c] hover:underline">
+            gannatgamal995@gmail.com
           </a>
         </p>
       </CardContent>
