@@ -1,25 +1,33 @@
 
 import { createContext, useContext, ReactNode, useState, useEffect } from "react";
-import { Product } from "../types";
+import { Product, Order } from "../types";
 import { toast } from "../components/ui/use-toast";
 
 interface CartContextType {
   cart: Product[];
+  orders: Order[];
   addToCart: (product: Product) => void;
   removeFromCart: (productId: number) => void;
   clearCart: () => void;
-  completeOrder: () => boolean;
+  completeOrder: (address: string, phoneNumber: string) => boolean;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<Product[]>([]);
+  const [orders, setOrders] = useState<Order[]>([]);
 
   useEffect(() => {
     const savedCart = localStorage.getItem('cart');
+    const savedOrders = localStorage.getItem('orders');
+    
     if (savedCart) {
       setCart(JSON.parse(savedCart));
+    }
+    
+    if (savedOrders) {
+      setOrders(JSON.parse(savedOrders));
     }
   }, []);
 
@@ -58,7 +66,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('cart', JSON.stringify([]));
   };
 
-  const completeOrder = () => {
+  const completeOrder = (address: string, phoneNumber: string) => {
     if (cart.length === 0) {
       toast({
         title: "Empty cart",
@@ -67,6 +75,19 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       });
       return false;
     }
+    
+    const newOrder: Order = {
+      id: Date.now(),
+      items: [...cart],
+      date: new Date().toISOString(),
+      total: cart.reduce((sum, item) => sum + item.price, 0),
+      address: address,
+      phoneNumber: phoneNumber,
+    };
+    
+    const updatedOrders = [...orders, newOrder];
+    setOrders(updatedOrders);
+    localStorage.setItem('orders', JSON.stringify(updatedOrders));
     
     toast({
       title: "Order completed!",
@@ -78,6 +99,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const value = {
     cart,
+    orders,
     addToCart,
     removeFromCart,
     clearCart,

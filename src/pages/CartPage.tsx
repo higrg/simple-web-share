@@ -50,7 +50,7 @@ const CartPage = () => {
   };
   
   const onSubmit = (values: OrderFormValues) => {
-    if (completeOrder()) {
+    if (completeOrder(values.address, values.phone)) {
       toast({
         title: "Order completed!",
         description: `Your order will be delivered to ${values.address}. We'll contact you at ${values.phone}.`

@@ -1,4 +1,14 @@
 
+export interface User {
+  id?: number;
+  firstname: string;
+  lastname: string;
+  email: string;
+  password: string;
+  country: string;
+  address: string;
+}
+
 export interface Product {
   id: number;
   name: string;
@@ -8,13 +18,11 @@ export interface Product {
   image: string;
 }
 
-export interface User {
-  firstname: string;
-  lastname: string;
-  email: string;
-  password: string;
-  country: string;
+export interface Order {
+  id: number;
+  items: Product[];
+  date: string;
+  total: number;
   address: string;
+  phoneNumber: string;
 }
-
-export type Category = 'Action' | 'Adventure' | 'RPG' | 'Strategy';

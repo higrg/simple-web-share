@@ -14,6 +14,9 @@ const ContactPage = () => {
             gannatgamal995@gmail.com
           </a>
         </p>
+        <p className="mt-2">
+          Phone: <span className="font-medium">+20 101 575 0584</span>
+        </p>
       </CardContent>
     </Card>
   );
